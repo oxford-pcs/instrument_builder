@@ -1,0 +1,13 @@
+[ 
+    {
+      "name": "SWIFT",
+      "pattern": "brick_wall",
+      "pattern_data": {
+        "slitlet_length": 5.0196,
+        "slitlet_separation": 0.2256,
+        "n_slitlets": 22,
+        "stagger_length": 9.0850
+      }
+    }
+]
+
