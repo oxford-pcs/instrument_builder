@@ -28,10 +28,13 @@ class slit():
       
       return slit   
     
-  def getFieldsFromSlitPattern(self, nfields, verbose=True, debug=False):
+  def getFieldsFromSlitPattern(self, nfields, umultiplier=1e3, verbose=True, debug=False):
     '''
       Takes the slit pattern and number of fields [nfields] and returns a list 
       of corresponding field points at the entrance slit.
+
+      If interfacing with Zemax, it may be necessary to move the units to lens
+      units (typically mm). This means setting the [umultiplier] parameter.
       
       How [nfields] is interpreted depends on the pattern type:
       
@@ -62,7 +65,12 @@ class slit():
           for x in range(0, nfields_per_slitlet):
             fields.append((x_s + (x * x_sampling), y))
         y = -y
-          
+
+    if umultiplier != 1:
+      tmp = []
+      [tmp.append((xy[0]*umultiplier, xy[1]*umultiplier)) for xy in fields]
+      fields = tmp
+
     if debug:
       plt.plot([xy[0] for xy in fields], [xy[1] for xy in fields], 'ko')
       plt.show()
