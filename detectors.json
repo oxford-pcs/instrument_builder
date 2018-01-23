@@ -2,7 +2,7 @@
     {
       "name": "apogee",
       "detector_data": {
-        "pitch": 12
+        "pitch": 12e-6
       }
     }
 ]
