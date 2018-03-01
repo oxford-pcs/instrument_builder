@@ -1,0 +1,17 @@
+[ 
+    {
+      "name": "SWIFT",
+      "slice_width_physical": 0.47E-3,
+      "slice_length_spaxels": 93,
+      "slice_inactive_spaxels": 4,
+      "n_slices": 22
+    },
+    {
+      "name": "SWIFT_testing",
+      "slice_width_physical": 0.47E-3,
+      "slice_length_spaxels": 93,
+      "slice_inactive_spaxels": 4,
+      "n_slices": 3
+    }
+]
+
