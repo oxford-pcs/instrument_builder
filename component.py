@@ -27,23 +27,33 @@ class Preoptics(Component):
     try:
       assert self.cfg is not None
     except AssertionError:
-      print "pre-optics config not found"
+      print "Pre-optics config not found"
       return None
 
-class Slicer(Component):
+class IFU(Component):
   def __init__(self, path, name):
-    super(Slicer, self).__init__(path, name)
+    super(IFU, self).__init__(path, name)
     try:
       assert self.cfg is not None
     except AssertionError:
-      print "slicer config not found"
+      print "IFU config not found"
       return None
 
-class Slit(Component):
+class Spectrograph(Component):
   def __init__(self, path, name):
-    super(Slit, self).__init__(path, name)
+    super(Spectrograph, self).__init__(path, name)
     try:
       assert self.cfg is not None
     except AssertionError:
-      print "slit config not found"
+      print "Spectrograph config not found"
+      return None      
+
+class Detector(Component):
+  def __init__(self, path, name):
+    super(Detector, self).__init__(path, name)
+    try:
+      assert self.cfg is not None
+    except AssertionError:
+      print "Detector config not found"
       return None
+
