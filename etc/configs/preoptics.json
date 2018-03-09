@@ -2,7 +2,8 @@
     {
       "name": "PALOMAR200_TO_SWIFT",
       "magnification_across_slices": 5.164,
-      "magnification_along_slices": 2.582
+      "magnification_along_slices": 2.582,
+      "WFNO": 1492
     }
 ]
 

@@ -5,7 +5,9 @@ Construct an instrument from a series of components.
 
 Current components include preoptics, IFUs, spectrographs and detectors. The corresponding files are stored as JSON in `etc/configs` and are loaded when an Instrument() instance is created.
 
-When defining a new instrument type, a new object should be created that inherits and calls the constructor from the Instrument() base class. Instrument specific functions can then be written for that particular instrument type e.g. constructing the fields for the entrance slit.
+When defining a new instrument type, a new object should be created that inherits and calls the constructor from the Instrument() base class. Each child object should have an assemble() function that constructs the instrument to allow for direct injection of configuration items.
+
+Instrument specific functions can then be written for that particular instrument type e.g. constructing the fields for the entrance slit.
 
 Current Instrument() child classes include:
 

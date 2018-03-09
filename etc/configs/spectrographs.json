@@ -2,7 +2,14 @@
     {
       "name": "SWIFT",
       "camera_EFFL": 117.594e-3,
-      "collimator_EFFL": 439.642e-3
+      "collimator_EFFL": 439.642e-3,
+      "n_spectrographs": 2
+    },
+    {
+      "name": "SIM1",
+      "camera_EFFL": 117.594e-3,
+      "collimator_EFFL": 439.642e-3,
+      "n_spectrographs": 1
     }
 ]
 
