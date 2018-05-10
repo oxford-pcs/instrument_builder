@@ -75,6 +75,9 @@ class SWIFT_like(Instrument):
       exit(0)
 
   def assemble(self, verbose=True, debug=False):
+    '''
+      Assemble the instrument, given the configuration parameters.
+    '''
     self.n_slices = self.n_slitlets = self.ifu.cfg['n_slices']
     self.camera_EFFL = self.spectrograph.cfg['camera_EFFL']
     self.collimator_EFFL = self.spectrograph.cfg['collimator_EFFL']
